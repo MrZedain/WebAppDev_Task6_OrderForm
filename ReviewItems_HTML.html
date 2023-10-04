@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review items page</title>
+
+    <!----------- CSS stylesheet--- -------->
+    <link rel="stylesheet" href="ReviewItems_CSS.css">
+    <!-------------------------------------->
+
+
+    <!-------------------------------LIBRARIES AND FRAMEWORKS------------------------------------------>
+    <!-- Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!--FontAwsome-->
+    <script src="https://kit.fontawesome.com/a51c1da5a5.js" crossorigin="anonymous"></script>
+    <!-- Include SweetAlert2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
+    <!------------------------------------------------------------------------------------------------->
+
+</head>
+
+<body>
+
+    <!------------------------------------Navigation bar---------------------------------------------------->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="logo-text">
+            <a class="navbar-brand" href="#">
+                <i class="fa-solid fa-computer"></i>
+                <h5 class="fas">ComputerComponents.com</h5>
+            </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-------------------------------------------------------------------------------------------------------->
+
+
+
+    <!---------------------------Checkout progress bar---------------------->
+    <div class="progress-container">
+        <div class="progress-step completed" data-step="1">
+            Billing info
+        </div>
+        <div class="progress-bar-container-complete">
+            <div class="progress-bar-line"></div>
+        </div>
+        <div class="progress-step completed current" data-step="2">
+            <p class="current-text">Review</p>
+        </div>
+        <div class="progress-bar-container-pending">
+            <div class="progress-bar-line"></div>
+        </div>
+        <div class="progress-step" data-step="3">
+            Checkout!
+            <!--blank space for formatting-->
+            <p></p>
+            <div class="progress-line"></div>
+        </div>
+    </div>
+    <!-------------------------------------------------------------------------->
+
+
+
+
+    <!--------------------------------------------------Products table------------------------------------------------------>
+    <!---------------------------------------------------------------------------------------------------------------------->
+    <table class="table">
+
+        <!--------------------Table head------------------------------------->
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Product</th>
+                <th scope="col"></th>
+                <th scope="col" class="quantityHeader">Quantity</th>
+                <th scope="col">Price</th>
+            </tr>
+        </thead>
+        <!------------------------------------------------------------------->
+
+
+        <!-------------------------------------------Table body----------------------------------------------------->
+        <tbody>
+
+            <!---------------------------------------PRODUCT 1------------------------------------------------------->
+            <tr class="product-row">
+                <th scope="row"><img class="productIMG img-thumbnail"
+                        src="https://webobjects2.cdw.com/is/image/CDW/6843316?$product-main$" alt="Motherboard"></th>
+                <td>
+                    <p class="product">ASUS PRIME Z690-A - motherboard - ATX - LGA1700 Socket - Z690</p>
+                </td>
+                <div>
+                    <td>
+                        <!--QUANITITY--  --> <button class="minus btn-dark"><i class="fa-solid fa-minus"></i></button>
+                        <h4 class="d-inline quantity">1</h4>
+                        <!--QUANTITY++--> <button class="plus btn-dark"><i class="fa-solid fa-plus"></i></button>
+                    </td>
+                </div>
+                <td>
+                    <h4 class="productPrice">$200</h4>
+                </td>
+            </tr>
+
+            <!---------------------------------------PRODUCT 2------------------------------------------------------->
+            <tr class="product-row">
+                <th scope="row"><img class="productIMG img-thumbnail"
+                        src="https://www.incehesap.com/resim/urun/202010/5f7746b8ccef52.86266006_egfphqnkimojl_500.jpg">
+                </th>
+                <td>
+                    <p class="product">AMD Ryzen 5 3500 MPK 3.6GHz 6 Core 16MB Socket AM4 Processor</p>
+                </td>
+                <div>
+                    <td>
+                        <!--QUANITITY--  --> <button class="minus btn-dark"><i class="fa-solid fa-minus"></i></button>
+                        <h4 class="d-inline quantity">1</h4>
+                        <!--QUANTITY++--> <button class="plus btn-dark"><i class="fa-solid fa-plus"></i></button>
+                    </td>
+                </div>
+                <td>
+                    <h4 class="productPrice">$119</h4>
+                </td>
+            </tr>
+
+            <!---------------------------------------PRODUCT 3------------------------------------------------------->
+            <tr class="product-row">
+                <th scope="row"><img class="productIMG img-thumbnail"
+                        src="https://cdn.vatanbilgisayar.com/Upload/PRODUCT/asus/thumb/128259_large.jpg"></th>
+                <td>
+                    <p class="product">TUF GeForce RTX 3060 GAMING V2 OC 12GB GDDR6 192Bit NVIDIA Graphics Card</p>
+                </td>
+                <div>
+                    <td>
+                        <!--QUANITITY--  --> <button class="minus btn-dark"><i class="fa-solid fa-minus"></i></button>
+                        <h4 class="d-inline quantity">1</h4>
+                        <!--QUANTITY++--> <button class="plus btn-dark"><i class="fa-solid fa-plus"></i></button>
+                    </td>
+                </div>
+                <td>
+                    <h4 class="productPrice">$329</h4>
+                </td>
+            </tr>
+
+            <!---------------------------------------PRODUCT 4------------------------------------------------------->
+            <tr class="product-row">
+                <th scope="row"><img class="productIMG img-thumbnail"
+                        src="https://m.media-amazon.com/images/I/71eEJvQBJLL.jpg"></th>
+                <td>
+                    <p class="product">Periphio Hydra Gaming PC Tower</p>
+                </td>
+                <div>
+                    <td>
+                        <!--QUANITITY--  --> <button class="minus btn-dark"><i class="fa-solid fa-minus"></i></button>
+                        <h4 class="d-inline quantity">1</h4>
+                        <!--QUANTITY++--> <button class="plus btn-dark"><i class="fa-solid fa-plus"></i></button>
+                    </td>
+                </div>
+                <td>
+                    <h4 class="productPrice">$100</h4>
+                </td>
+            </tr>
+
+            <!---------------------------------------PRODUCT 5------------------------------------------------------->
+            <tr class="product-row">
+                <th scope="row"><img class="productIMG img-thumbnail"
+                        src="https://m.media-amazon.com/images/I/71pM4AqWdRL._AC_UF1000,1000_QL80_.jpg"></th>
+                <td>
+                    <p class="product">MSI MPG A650GF 650W 80+ GOLD POWER SUPPLY</p>
+                </td>
+                <div>
+                    <td>
+                        <!--QUANITITY--  --> <button class="minus btn-dark"><i class="fa-solid fa-minus"></i></button>
+                        <h4 class="d-inline quantity">1</h4>
+                        <!--QUANTITY++--> <button class="plus btn-dark"><i class="fa-solid fa-plus"></i></button>
+                    </td>
+                </div>
+                <td>
+                    <h4 class="productPrice">$99</h4>
+                </td>
+            </tr>
+            <!--------------------------------------------------------------------------------------------------------------------->
+            <tr>
+                <th scope="row"></th>
+                <td></td>
+                <td>
+                    <!---------------------------TOTALS TABLE---------------------------------->
+                    <div class="totalsParent">
+                        <table class="table totals table-borderless offset-md-4">
+                            <tr>
+                                <th scope="row"></th>
+                                <td>
+                                    <h3 class="subtotal">Subtotal</h3>
+                                </td>
+                                <td>
+                                    <h3 class="subtotalPrice">$648</h3>
+                                </td>
+                            <tr>
+                                <th scope="row"></th>
+                                <td>
+                                    <h3 class="shipping">Shipping</h3>
+                                </td>
+                                <td>
+                                    <h3 class="shippingPrice">$50</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row"></th>
+                                <td>
+                                    <h1 class="total">Total</h1>
+                                </td>
+                                <td>
+                                    <h1 class="totalPrice">$698</h1>
+                                </td>
+                            </tr>
+            </tr>
+            </div>
+
+    </table>
+    <!----------------------------------------------------------------------------------->
+    </td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+    
+<!------------------------------Checkout button--------------------------------->
+    <button class="btn-block btn-warning checkoutbtn fas">Proceed to checkout <i
+            class="fa-solid fa-arrow-right"></i></button>
+<!------------------------------------------------------------------------------>
+
+    
+
+
+
+<!----------JavaScript file------------>
+<script src="ReviewItems_JS.js"></script>
+<!------------------------------------->
+
+
+</body>
+
+
+
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+
+<!-- ------------------------JavaScript framework and library files---------------------------->
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<!-- Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<!-- Bootstrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- SweetAlert2 JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>

@@ -1,0 +1,111 @@
+/*---------------Progress Bar------------------------ */
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+/* Styling for individual steps */
+.progress-step {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+.progress-step::before {
+    content: attr(data-step);
+    width: 20px;
+    height: 20px;
+    background-color: #817979;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 10px auto;
+    color: #fff;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+
+.progress-step.completed::before {
+    background-color: #0a0a0a;
+}
+
+/* Styling for the black progress bar */
+.progress-bar-container-complete {
+    flex: 3;
+    height: 2px;
+    background-color: #000000;
+    position: relative;
+}
+
+.progress-bar-container-pending {
+    flex: 3;
+    height: 2px;
+    background-color: #a3a1a1;
+    position: relative;
+}
+
+/* Styling for completed progress bar lines */
+.progress-bar-line {
+    flex: 2;
+    height: 2px;
+    background-color: #0b0101;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-1px);
+    z-index: -1;
+}
+
+.current-text {
+    font-weight: bold
+}
+
+/*----------------------------------------------------------*/
+
+.productIMG {
+    height: auto;
+    width: 100px;
+}
+
+
+.quantity {
+    padding-right: 8px;
+    padding-left: 6px;
+}
+
+/*-------------totals table-------------------------*/
+.totals {
+    background-color: #343a40;
+    border-radius: 20px;
+    max-width: 93%;
+    box-shadow: 4px 2px 8px 0px rgba(0, 0, 0, 5.5);
+}
+
+.totals tbody tr:not(:last-child) {
+    background-color: #fff;  
+}
+
+.total,
+.totalPrice {
+    color: #fff
+}
+/*---------------------------------------------------*/
+
+.product {
+    font-weight: 500;
+}
+
+.checkoutbtn {
+    height: 30px;
+    margin-top: -200%;
+}
+
+.logo-text {
+    display:flex;
+    color:#fff;
+    align-items:center;
+}
